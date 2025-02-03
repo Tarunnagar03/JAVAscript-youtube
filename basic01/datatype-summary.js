@@ -31,3 +31,29 @@ console.log (id === anotherId);
    }
 
    console.log(typeof id);
+
+
+   //*****************************************************************************//
+
+   // Stack(Primitive)original value ki copy, Heap(non-Primitive)original reference
+
+   let myYoutubename = "tarun"
+
+   let anothername = myYoutubename
+   anothername = "chai"
+   console.log(myYoutubename);
+   console.log(anothername);
+
+   let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+   }
+
+   let userTwo = userOne
+
+   userTwo.email = "tarun@gmail.com"
+
+   console.log(userOne.email);
+   console.log(userTwo.email);
+
+
